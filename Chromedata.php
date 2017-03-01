@@ -112,7 +112,8 @@ class Chromedata
 		/* Set parameters for the request */
 		$params = array(
 			"accountInfo" => $this->getAccountInfo(),
-			"vin"=>$vin
+			"vin"=>$vin,
+            "switch"=>array('ShowAvailableEquipment','ShowExtendedTechnicalSpecifications')
 		);
 
 		/* Invoke webservice method - describeVehicle  */
